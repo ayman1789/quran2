@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إذاعة القرآن الكريم من القاهرة</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            background-image: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><g fill="%23b8b8b8" fill-opacity="0.4"><path d="M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z"/></g></svg>');
+        }
+        .islamic-gradient {
+            background: linear-gradient(to bottom, #4a4a4a, #2c3e50);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="container mx-auto px-4 text-center">
+        <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md mx-auto islamic-gradient text-white">
+            <h1 class="text-3xl font-bold mb-6 text-yellow-300">إذاعة القرآن الكريم من القاهرة</h1>
+            
+            <div class="mb-6">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='100' height='100'><text x='50' y='50' text-anchor='middle' dy='.3em' font-size='50'>📻</text></svg>" 
+                     alt="راديو" class="mx-auto mb-4 w-24 h-24">
+            </div>
+
+            <audio id="quranRadio" controls class="w-full mb-6">
+                <source src="https://n13.radiojar.com/8s5u5tpdtwzuv?rj-ttl=5&rj-tok=AAABk6shqpUAmERj_dQaKuFSRw" type="audio/mpeg">
+                متصفحك لا يدعم عنصر الصوت
+            </audio>
+
+            <div class="text-sm text-gray-300 mb-4">
+                <p>استمع إلى تلاوات القرآن الكريم بصوت عذب</p>
+                <p>نسأل الله أن يتقبل منا ومنكم</p>
+            </div>
+
+            <div class="flex justify-center space-x-4 rtl:space-x-reverse">
+                <button onclick="document.getElementById('quranRadio').play()" 
+                        class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+                    تشغيل
+                </button>
+                <button onclick="document.getElementById('quranRadio').pause()" 
+                        class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+                    إيقاف
+                </button>
+            </div>
+        </div>
+
+        <footer class="mt-6 text-center text-gray-600">
+            <p>© 2024 إذاعة القرآن الكريم</p>
+        </footer>
+    </div>
+</body>
+</html>
